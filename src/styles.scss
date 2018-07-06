@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import "colors.scss";
+
+body {
+  min-height: 100%;
+  background-color: $bg_color;
+  position: relative;
+  overflow: hidden;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.clearfix:after {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.grain {
+  position: fixed;
+  pointer-events: none;
+  webkit-animation: grainAnimation 1s steps(4) infinite;
+  animation: grainAnimation 1s steps(4) infinite;
+  background-image: url(//willmayer.com/wp-content/themes/will_mayer/assets/stylesheets/../images/grain-888ad7615a.png);
+  height: 180%;
+  left: -40%;
+  top: -40%;
+  width: 180%;
+  z-index: 46;
+}
+
+@-webkit-keyframes grainAnimation{0%{-webkit-transform:translate(0,0);transform:translate(0,0)}10%{-webkit-transform:translate(-5%,-5%);transform:translate(-5%,-5%)}20%{-webkit-transform:translate(-10%,5%);transform:translate(-10%,5%)}30%{-webkit-transform:translate(5%,-10%);transform:translate(5%,-10%)}40%{-webkit-transform:translate(-5%,15%);transform:translate(-5%,15%)}50%{-webkit-transform:translate(-10%,5%);transform:translate(-10%,5%)}60%{-webkit-transform:translate(15%,0);transform:translate(15%,0)}70%{-webkit-transform:translate(0,10%);transform:translate(0,10%)}80%{-webkit-transform:translate(-15%,0);transform:translate(-15%,0)}90%{-webkit-transform:translate(10%,5%);transform:translate(10%,5%)}100%{-webkit-transform:translate(5%,0);transform:translate(5%,0)}}
+@keyframes grainAnimation{0%{-webkit-transform:translate(0,0);transform:translate(0,0)}10%{-webkit-transform:translate(-5%,-5%);transform:translate(-5%,-5%)}20%{-webkit-transform:translate(-10%,5%);transform:translate(-10%,5%)}30%{-webkit-transform:translate(5%,-10%);transform:translate(5%,-10%)}40%{-webkit-transform:translate(-5%,15%);transform:translate(-5%,15%)}50%{-webkit-transform:translate(-10%,5%);transform:translate(-10%,5%)}60%{-webkit-transform:translate(15%,0);transform:translate(15%,0)}70%{-webkit-transform:translate(0,10%);transform:translate(0,10%)}80%{-webkit-transform:translate(-15%,0);transform:translate(-15%,0)}90%{-webkit-transform:translate(10%,5%);transform:translate(10%,5%)}100%{-webkit-transform:translate(5%,0);transform:translate(5%,0)}}

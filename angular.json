@@ -27,9 +27,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/colors.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/textures/dist/textures.js",
+              "node_modules/d3/dist/d3.js"
+            ]
           },
           "configurations": {
             "production": {
